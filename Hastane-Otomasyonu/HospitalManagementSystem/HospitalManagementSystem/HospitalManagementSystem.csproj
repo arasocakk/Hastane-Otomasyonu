@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A22DC2C7-5909-4A6B-9888-CD2402D4EBC6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HospitalManagementSystem</RootNamespace>
+    <AssemblyName>HospitalManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DatabaseTransactions.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminLogin.Designer.cs">
+      <DependentUpon>frmAdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBransEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBransEkle.Designer.cs">
+      <DependentUpon>frmBransEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoctorLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoctorLogin.Designer.cs">
+      <DependentUpon>frmDoctorLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoktorDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoktorDetay.Designer.cs">
+      <DependentUpon>frmDoktorDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoktorIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoktorIslemleri.Designer.cs">
+      <DependentUpon>frmDoktorIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRandevuOlustur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRandevuOlustur.Designer.cs">
+      <DependentUpon>frmRandevuOlustur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecretaryLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSecretaryLogin.Designer.cs">
+      <DependentUpon>frmSecretaryLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSekreterEkleAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSekreterEkleAdmin.Designer.cs">
+      <DependentUpon>frmSekreterEkleAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSekreterEkranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSekreterEkranı.Designer.cs">
+      <DependentUpon>frmSekreterEkranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaEkle.Designer.cs">
+      <DependentUpon>HastaEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.en.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminLogin.en.resx">
+      <DependentUpon>frmAdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminLogin.resx">
+      <DependentUpon>frmAdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBransEkle.resx">
+      <DependentUpon>frmBransEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoctorLogin.resx">
+      <DependentUpon>frmDoctorLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoktorDetay.resx">
+      <DependentUpon>frmDoktorDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoktorIslemleri.resx">
+      <DependentUpon>frmDoktorIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRandevuOlustur.resx">
+      <DependentUpon>frmRandevuOlustur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSecretaryLogin.resx">
+      <DependentUpon>frmSecretaryLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSekreterEkleAdmin.resx">
+      <DependentUpon>frmSekreterEkleAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSekreterEkranı.resx">
+      <DependentUpon>frmSekreterEkranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaEkle.resx">
+      <DependentUpon>HastaEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adminPNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctorPNG %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\secreteryPNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turkbayragiPNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unitedkingdomPNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\powerswitchPNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newpowerswitchPNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adminPNG1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctorPNG %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newpowerswitchPNG1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\powerswitchPNG1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\secreteryPNG1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adminPNG5850.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctorNew150140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicalsecretary150140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctorNew5850.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical secretary 5850.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\returnPNG4035.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appointmentPNG150140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospital150140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patientPNG150140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospital5850.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appointmentPNG5850.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patientPNG7060.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
